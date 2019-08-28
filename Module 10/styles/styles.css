@@ -190,7 +190,7 @@ border-bottom: 3px solid #efd787;
     color: #a8a8a8;
 }
 
-ul li.services-item:nth-of-type(-n+3) {
+ul li.services__item:nth-of-type(-n+3) {
    padding-bottom: 50px;
 }
 
