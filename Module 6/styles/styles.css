@@ -1,0 +1,352 @@
+:root {
+  --col: 80px;
+  --gap: 20px;
+  --cl: calc(var(--col) + var(--gap));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* outline: 1px red solid; */
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* ==== WIDTH ==== */
+
+.col-1 {
+  width: calc(var(--cl) * 1);
+}
+
+.col-4 {
+  width: calc((var(--cl) * 4) - 60px);
+}
+
+.col-5 {
+  width: calc(var(--cl) * 5);
+}
+
+.col-10 {
+  width: calc(var(--cl) * 10);
+}
+
+/* .col-12 {
+  width: calc((var(--cl) * 12);
+} */
+
+/* ==== HEADER ==== */
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: calc(50px - 24px);
+  /* min-height: 50px; */
+}
+
+.logo-img {
+  display: block;
+  width: 90px;
+  height: 24px;
+}
+
+.navigation-list-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-item {
+  list-style: none;
+}
+
+.navigation-item:after {
+  margin-top: 10px;
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: #f38181;
+  transition-property: width;
+  transition-duration: 200ms;
+  opacity: 0;
+}
+
+.navigation-item:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.navigation-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #95e1d3;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.navigation-link:hover {
+  color: #f38181;
+}
+
+/* ====== MAIN ===== */
+
+.main-head {
+  padding-top: 115px;
+  text-align: center;
+}
+
+.main-head span {
+  display: block;
+}
+
+.main-head-top {
+  font-family: "Kaushan Script", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 24px;
+}
+
+.main-head-bottom {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.main-head-bottom::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin: 44px auto 60px auto;
+}
+
+/* ==== MAIN ==== */
+
+.cards-flex-wrp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* background-color: teal; */
+}
+
+.card {
+  display: flex;
+  width: calc(var(--cl) * 4);
+  /* background-color: lightyellow; */
+  /* padding: 0 0 100px 0; */
+}
+
+div .card:nth-of-type(-n + 3) {
+  padding-bottom: 100px;
+}
+
+.card-icon-wrp {
+  width: var(--col);
+  flex-basis: var(--col);
+  text-align: center;
+}
+
+.card-text-wrp {
+  width: calc(var(--cl) * 3);
+}
+
+.card-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  padding-bottom: 20px;
+}
+
+.card-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #a0a0a0;
+}
+
+.subhead {
+  padding-top: 90px;
+  text-align: center;
+}
+.subhead span {
+  display: block;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  color: #999999;
+  margin-bottom: 95px;
+}
+
+/* ==== TEAM ==== */
+
+.team-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 84px;
+  flex-wrap: wrap;
+}
+
+.team-section-card {
+  position: relative;
+  width: 380px;
+  height: 555px;
+  cursor: pointer;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+div .team-section-card:nth-of-type(-n+2) {
+  margin-right: 30px;
+}
+
+.team-img {
+  width: 380px;
+  height: 472px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.img-first {
+  object-position: left;
+}
+
+.img-second {
+  object-position: right;
+}
+
+.card-modal {
+  position: absolute;
+  width: 381px;
+  height: 472px;
+  top: -10px;
+  left: -10px;
+  background: linear-gradient(#ee8889, #f5b78e, #eed788);
+  z-index: 1;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+.team-name,
+.team-position {
+  display: block;
+}
+
+.team-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.team-position {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  color: #a0a0a0;
+  text-align: center;
+}
+
+.icon-btn-wrapper {
+  position: absolute;
+  top: 197px;
+  left: 65px;
+  z-index: 2;
+  opacity: 0;
+}
+
+.button {
+  --b: 56px;
+  border: none;
+  outline: none;
+  width: var(--b);
+  height: var(--b);
+  vertical-align: top;
+  background-color: #fce38a;
+  cursor: pointer;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+
+/* ==== HOVER ==== */
+
+.team-section-card:hover .card-modal {
+  /* transition-property: opacity;
+  transition-duration: 200ms; */
+  opacity: 0.9;
+}
+
+.team-section-card:hover .icon-btn-wrapper {
+  /* transition-property: opacity;
+  transition-duration: 200ms; */
+  opacity: 1;
+}
+
+.button:hover {
+  /* transition-property: opacity;
+  transition-duration: 200ms; */
+  background-color: #95e1d3;
+}
+
+/* ==== FOOTER ==== */
+
+.footer-flex {
+  height: 64px;
+  border-top: 1px solid #a0a0a0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text,
+span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+.company {
+  color: #f38181;
+}
+
+.subscribe-wrp-flex {
+  display: flex;
+  justify-content: flex-end;
+}
+.subscribe-button {
+  border: none;
+  outline: none;
+  width: 150px;
+  height: 30px;
+  background-color: #95e1d3;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrar", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+input {
+  font-family: "Montserrar", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+}
+

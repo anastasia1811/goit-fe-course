@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */
+}
+
+.wrapper {
+  width: 1170px;
+  padding: 37px 15px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header {
+  margin-bottom: 85px;
+  /* background-color: red; */
+}
+
+.logo-link {
+  float: left;
+}
+
+.logo-image {
+  width: 80px;
+  height: 25px;
+}
+.menu {
+  /* margin-left: 490px; */
+  float: right;
+  /* background-color: red; */
+}
+.menu-item {
+  float: left;
+  list-style: none;
+}
+
+.menu-link {
+  padding: 0 20px;
+  font-family: "Open Sans";
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #0f0101;
+  line-height: 14px;
+}
+
+.menu-link:hover {
+  color: #62cab2;
+}
+
+.head1 {
+  font-family: "Roboto";
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  color: #515151;
+  margin: 0;
+}
+
+.head1::after {
+  display: block;
+  content: "";
+  height: 5px;
+  width: 160px;
+  background-color: #4ec6ab;
+  margin: 25px auto 92px auto;
+}
+
+.cards-wrapper {
+  font-size: 0;
+  margin-bottom: 60px;
+  /* background-color: red; */
+}
+
+.card {
+  margin: 0 15px 30px 15px;
+  float: left;
+  cursor: pointer;
+}
+
+.card-img {
+  width: 255px;
+  height: 282px;
+}
+
+.card-text {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 18px;
+  width: 190px;
+  height: 40px;
+  background-color: #323232;
+  vertical-align: middle;
+  margin: 0;
+  line-height: 40px;
+  font-family: "Roboto";
+  font-weight: 800;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+.card-price {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 18px;
+  width: 55px;
+  height: 40px;
+  background-color: #8c8c8c;
+  vertical-align: middle;
+  margin: 0;
+  line-height: 40px;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 800;
+}
+
+.card:hover .card-text {
+  background: #1abc9c;
+}
+
+.card:hover .card-price {
+  background: #7fd9c7;
+}
+.head2 {
+  font-family: "Roboto";
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  color: #555252;
+}
+
+.head2::after {
+  display: block;
+  content: "";
+  height: 5px;
+  width: 160px;
+  background-color: #4ec6ab;
+  text-align: center;
+  margin: 24px auto 80px auto;
+}
+
+.blog-section {
+  font-size: 0;
+}
+
+.blog {
+  width: 350px;
+  float: left;
+  padding: 0 15px 0 15px;
+}
+.blog-img {
+  width: 350px;
+  height: 265px;
+}
+
+.head3 {
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  color: #555252;
+  text-align: left;
+  padding-top: 15px;
+}
+
+.head3::after {
+  display: block;
+  content: " ";
+  height: 2px;
+  width: 135px;
+  background-color: #4ec6ab;
+  text-align: center;
+  margin: 15px 0 30px 0;
+}
+
+.blog-text {
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: #9a9999;
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #4ec6ab;
+  width: 160px;
+  height: 50px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Roboto";
+  color: #ffffff;
+}

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    padding-top: 32px;
+    width: 900px;
+    margin: 0 auto;
+    /* background-color: lightgray; */
+}
+
+
+.list {
+    list-style: none; 
+    /* убрать маркер списка */
+    margin-left: 150px;
+    margin-bottom: 100px;
+}
+
+.list-item {
+    display: inline-block;
+}
+
+
+.list-link {
+    display: block;
+    width: 150px;
+    text-decoration: none;
+    /* убрать подчеркивание */
+    text-align: center;
+    /* отцентрировать по горизонтали */
+    text-transform: uppercase;
+    /* все заглавные буквы */
+    font-family: sans-serif;
+    /* шрифт без засечек */
+    color: #444;
+}
+
+.list-link:hover {
+    color: blue;
+}
+
+.main-content {
+    font-size: 0;
+    /* inline-block расценивают перенос строй и тд, как пробел, поэтому появляется пару пикселей и ширина 50% не вмещается в заданную (по ум. 100%) */
+}
+
+.box {
+    display: inline-block;
+    width:50%;
+    font-size: 16px;
+    width: 420px;
+    margin-bottom: 135px;
+}
+
+.box-margin-right {
+    margin-right: 60px;
+}
+
+.box-image {
+    margin-bottom: 30px;
+}
+.title {
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-bottom: 25px;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-family: sans-serif;
+    margin-block-end: 45px;
+}
+
+
+.button {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.load-more-button {
+    display: inline-block;
+    border: 2px solid black;
+    margin: 0;
+    padding: 20px 35px;
+    cursor: pointer;
+    }

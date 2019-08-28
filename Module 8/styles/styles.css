@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid--header {
+  min-height: 540px;
+  min-width: 320px;
+  background-image: url(../images/bg-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-content {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.btn-small {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.btn-small:hover {
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+
+.logo-link {
+  display: block;
+  font-family: "Montserrat";
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 35px;
+  padding-top: 110px;
+}
+
+.head2 {
+  width: 100%;
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0 auto 20px auto;
+  padding-top: 117px;
+}
+
+.subhead2 {
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-big {
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.btn-big-red {
+  width: 280px;
+  height: 40px;
+  background-color: #ff4e50;
+  color: #fff;
+  margin-bottom: 138px;
+  border: 2px solid transparent;
+}
+
+.btn-big-red:hover {
+  background-color: #fff;
+  color: #ff4e50;
+}
+
+.main-continer {
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.head3 {
+  font-size: 22px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.2;
+  padding-top: 70px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.card-container {
+  min-width: 210px;
+  margin: 0 auto;
+}
+
+.card-img {
+  width: 125px;
+  height: auto;
+  margin: auto;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.image {
+  display: block;
+  border-radius: 50%;
+}
+
+.icon-link {
+  cursor: pointer;
+}
+.icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.head5 {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #333333;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card-text {
+  margin: auto;
+  max-width: 210px;
+  font-size: 14px;
+  font-family: "Roboto";
+  color: #666666;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.btn-big-white {
+  display: block;
+  margin: 0 auto;
+  width: 284px;
+  height: 44px;
+  background-color: #fff;
+  color: #ff4e50;
+  border: 2px solid #ff4e50;
+  margin-bottom: 60px;
+}
+
+.btn-big-white:hover {
+  background-color: #ff4e50;
+  color: #fff;
+}
+
+/* ==== MEDIA ==== */
+
+@media (min-width: 748px) {
+  .container-fluid--header {
+    min-height: 700px;
+    background-image: url(../images/bg-tablet.jpg);
+  }
+  
+  .header-content {
+    max-width: 748px;
+    padding-top: 50px;
+    margin: 0 auto;
+  }
+
+  .header-container-flex {
+    height: 32px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .logo-link {
+    float: left;
+    margin-left: 44px;
+    padding-top: 0;
+  }
+
+  .head2 {
+    max-width: 492px;
+    padding-top: 160px;
+    margin-bottom: 45px;
+    font-size: 51.97px;
+    /* margin: 0 auto; */
+  }
+
+  .subhead2 {
+    margin-bottom: 35px;
+    font-size: 23.99px;
+  }
+
+  .btn-big {
+    padding: 11px 35px;
+  }
+
+  .btn-big-red {
+    margin-bottom: 233px;
+  }
+
+  .card-container {
+    max-width: 492px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .card {
+    max-width: 236px;
+  }
+
+  .card:nth-of-type(-n + 2) {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 940px) {
+  .container-fluid--header {
+    background-image: url(../images/bg-dekstop.jpg);
+  }
+
+  .header-content {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+
+  .head2 {
+    max-width: 620px;
+    padding-top: 170px;
+    font-size: 52px;
+  }
+
+  .subhead2 {
+    font-size: 24px;
+  }
+
+  .btn-big {
+    padding: 10px 30px;
+    margin-bottom: 235px;
+  }
+
+  .card-container {
+    max-width: 920px;
+  }
+
+  .card {
+    max-width: 222px;
+  }
+  .card-text {
+    margin-bottom: 0;
+  }
+  .card:nth-of-type(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  .btn-big-red {
+    margin-bottom: 75px;
+  }
+}

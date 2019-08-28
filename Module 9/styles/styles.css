@@ -1,0 +1,67 @@
+@import url(./fonts.css);
+
+:root {
+  font-size: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid--header {
+  min-height: 540px;
+  min-width: 320px;
+  background-image: url(../images/bg-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn:hover {
+  border-color: #fff;
+}
+
+.btn-lg-red {
+  background-color: #ff4e50;
+}
+
+.btn-lg-red:hover {
+  background-color: #fff;
+  color: #ff4e50 !important;
+}
+
+.card-img {
+  width: 125px;
+  height: auto;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.btn-lg-white {
+  border: 2px solid #ff4e50 !important;
+}
+.btn-lg-white:hover {
+  background-color: #ff4e50;
+  color: #fff !important;
+}
+
+/* ==== MEDIA ==== */
+
+@media (min-width: 748px) {
+  .container-fluid--header {
+    min-height: 700px;
+    background-image: url(../images/bg-tablet.jpg);
+  }
+
+}
+
+@media (min-width: 940px) {
+  .container-fluid--header {
+    background-image: url(../images/bg-dekstop.jpg);
+  }
+}

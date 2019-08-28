@@ -1,0 +1,244 @@
+@import url(../styles/fonts.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ==== HEADER ==== */
+.header-flex {
+  display: flex;
+  max-width: 940px;
+  min-height: 65px;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 auto 120px auto;
+}
+
+.menu-flex {
+  display: flex;
+  min-width: 485px;
+  justify-content: space-between;
+}
+
+.menu-item {
+  list-style: none;
+}
+
+.menu-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #222222;
+  position: relative;
+  transition: color 0.5s;
+}
+
+.menu-link:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #fed136;
+  transition: width 0.5s;
+}
+
+.menu-link:hover::after {
+  width: 100%;
+}
+
+.menu-link:hover {
+  color: #ffeab4;
+}
+
+/* ==== MAIN ==== */
+
+.main-wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.main-head {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #222222;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-description {
+  font-family: "Droid Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+  color: #a2a2a2;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.cards-wrapper-flex {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+article .card:nth-child(-n + 2) {
+  margin-right: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.icon-responsive-web,
+.icon-e-commerce {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+.icon-web-security {
+  position: absolute;
+  top: 20%;
+  left: 28%;
+}
+
+.card-head {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #222222;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #a2a2a2;
+  text-align: center;
+}
+
+.footer {
+  min-height: 670px;
+  background-color: #222222;
+  background-image: url(../images/map.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.footer-head {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  padding-top: 105px;
+  margin-bottom: 25px;
+}
+
+.footer-description {
+  font-family: "Droid Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 16px;
+  color: #a2a2a2;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.info-form {
+  max-width: 940px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.input-wrapper-flex {
+  display: flex;
+  flex-direction: column;
+  width: 455px;
+  height: 210px;
+  justify-content: space-between;
+}
+
+.info-form-wrapper-flex {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 455px;
+  height: 210px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #c5c5c5;
+  padding: 20px 0 0 20px;
+  outline: 4px solid transparent;
+  transition: outline 0.2s;
+  resize: none;
+}
+
+input {
+  box-sizing: border-box;
+  height: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #c5c5c5;
+  padding: 5px 0 0 20px;
+  outline: 4px solid transparent;
+}
+
+button {
+  border: none;
+  outline: none;
+  width: 240px;
+  height: 65px;
+  background: #fed136;
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[name="name"]:focus:invalid,
+input[type="email"]:focus:invalid,
+textarea[name="message"]:focus:invalid {
+  outline-color: red;
+  transition: outline-color 2s;
+}
+
+input[name="name"]:focus:valid,
+input[type="email"]:focus:valid,
+textarea[name="message"]:focus:valid {
+  outline-color: green;
+  transition: outline 1s;
+}

@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header {
+  box-sizing: border-box;
+  max-width: 1170px;
+  margin: auto;
+  padding: 35px 30px 35px 30px;
+}
+.logo-img {
+  float: left;
+  width: 80px;
+  height: 25px;
+}
+
+.logo-link {
+  display: inline-block;
+  width: 80px;
+  height: 25px;
+}
+
+.menu {
+  float: right;
+}
+
+.menu-item {
+  float: left;
+  padding: 0 15px 0 15px;
+  list-style: none;
+}
+
+.menu-link {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+}
+
+.menu-link:hover {
+  color: #4f9c8a;
+}
+
+.slider-wrp {
+  background-image: url(https://raw.githubusercontent.com/anastasia1811/goit-fe-course/master/images/slide4.jpg);
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider {
+  max-width: 1170px;
+  height: 600px;
+  margin: auto;
+  position: relative;
+}
+
+.head1 {
+  position: absolute;
+  top: 185px;
+  left: 205px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.head2 {
+  position: absolute;
+  top: 298px;
+  left: 205px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.button {
+  --s: 104px;
+  border: none;
+  outline: none;
+  width: var(--s);
+  height: var(--s);
+  background-color: #1abc9c;
+  cursor: pointer;
+}
+
+.button-left {
+  position: absolute;
+  top: 224px;
+  left: 30px;
+  opacity: 0.65;
+}
+
+.button-right {
+  position: absolute;
+  top: 224px;
+  right: 30px;
+  opacity: 0.65;
+}
+
+.arrow {
+  display: inline-block;
+  border-bottom: 2px #fff solid;
+  border-right: 2px #fff solid;
+  width: 20px;
+  height: 20px;
+}
+
+.arrow-left {
+  transform: rotate(135deg);
+}
+
+.arrow-right {
+  transform: rotate(-45deg);
+}
+
+.button:hover {
+  background-color: #1abc9c;
+  opacity: 1;
+}
+
+/* ==== CARDS ===== */
+.cards {
+  background-color: #e9f0fd;
+  padding-bottom: 100px;
+}
+
+.container {
+  max-width: 1170px;
+  height: auto;
+  margin: auto;
+}
+
+.head3 {
+  padding-top: 100px;
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.head3::after {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 5px;
+  background-color: #1abc9c;
+  margin: 30px auto 80px auto;
+}
+
+.card-wrapper {
+  float: left;
+  padding: 0 15px;
+}
+
+.card-img-wrp {
+  width: 255px;
+  height: 280px;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.card-modal {
+  position: absolute;
+  background-color: #000000;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.card-btn-wrp {
+  width: 190px;
+  height: 120px;
+  position: absolute;
+  top: 80px;
+  left: 35px;
+  z-index: 2;
+}
+
+.icon-btn {
+  --s: 50px;
+  border: none;
+  outline: none;
+  width: var(--s);
+  height: var(--s);
+  cursor: pointer;
+  border: 1px #fff solid;
+  background: transparent;
+  vertical-align: top;
+  margin: 0 7px 10px 0;
+  opacity: 0;
+}
+
+.icon-btn-add {
+  height: 50px;
+  width: 170px;
+  cursor: pointer;
+  border: 1px #fff solid;
+  background-color: #323232;
+  line-height: 50px;
+}
+
+.icon-img {
+  width: 25px;
+  height: auto;
+}
+
+.icon-img-add {
+  width: 25px;
+  height: auto;
+  vertical-align: middle;
+}
+.icon-txt {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  font-family: "open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  vertical-align: top;
+  padding-left: 15px;
+}
+
+.card-info-wrp {
+  width: 255px;
+  height: 40px;
+  font-size: 0;
+}
+
+.card-info,
+.card-price {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 40px;
+}
+
+.card-info {
+  background-color: #323232;
+  width: 200px;
+  height: 40px;
+}
+
+.card-price {
+  background-color: #8c8c8c;
+  width: 55px;
+  height: 40px;
+}
+/* ===== hover ====== */
+
+.card-wrapper:hover .card-modal {
+  opacity: 0.65;
+}
+.card-wrapper:hover .icon-btn {
+  opacity: 1;
+}
+.icon-btn:hover {
+  background-color: #1abc9c;
+}
+
+.card-wrapper:hover .card-info {
+  background-color: #1abc9c;
+}
+
+.card-wrapper:hover .card-price {
+  background-color: #7fd9c7;
+}
+/* ===== footer ===== */
+
+.footer-wrapper {
+  background-color: #323232;
+}
+
+.footer {
+  max-width: 1170px;
+  height: 90px;
+  margin: auto;
+}
+
+.info {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  line-height: 90px;
+}
+
+.company {
+  color: #1abc9c;
+}
