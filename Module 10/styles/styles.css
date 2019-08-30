@@ -30,11 +30,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   padding-bottom: 175px;
 }
 
@@ -57,11 +57,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .menu__item {
@@ -69,19 +69,19 @@
 }
 
 .menu__link:after {
-content: "";
-display: block;
-width: 0;
-height: 11px;
-background-color: transparent;
--webkit-transition: all 0.2s linear;
--o-transition: all 0.2s linear;
-transition: all 0.2s linear;
-border-bottom: 3px solid #efd787; 
+  content: "";
+  display: block;
+  width: 0;
+  height: 11px;
+  background-color: transparent;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  border-bottom: 3px solid #efd787;
 }
 
 .menu__link:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .menu__link {
@@ -94,9 +94,9 @@ border-bottom: 3px solid #efd787;
 }
 
 .menu__icon {
-    width: 20px;
-    height: 20px;
-    fill: #fff;
+  width: 20px;
+  height: 20px;
+  fill: #fff;
 }
 
 .main__head--small {
@@ -125,8 +125,8 @@ border-bottom: 3px solid #efd787;
 }
 
 .button--white {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
   width: 160px;
   height: 40px;
   border: 2px solid #fff;
@@ -142,61 +142,61 @@ border-bottom: 3px solid #efd787;
 }
 
 .button--white:hover {
-    background-color: #f38181;
+  background-color: #f38181;
 }
 .services__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .services__item {
-    list-style: none;
-    width: calc(var(--cl) * 4);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+  list-style: none;
+  width: calc(var(--cl) * 4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .img__wrp--services {
-    width: var(--col);
+  width: var(--col);
 }
 
 .services__description {
-    width: calc(var(--cl) * 3);
+  width: calc(var(--cl) * 3);
 }
 
 .services__head {
-    padding-bottom: 20px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    color: #333333;
-    text-transform: uppercase;
+  padding-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #333333;
+  text-transform: uppercase;
 }
 
 .services__text {
-    font-family: "Roboto", sans-serif;
-    font-size: 15px;
-    color: #a8a8a8;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #a8a8a8;
 }
 
-ul li.services__item:nth-of-type(-n+3) {
-   padding-bottom: 50px;
+ul li.services__item:nth-of-type(-n + 3) {
+  padding-bottom: 50px;
 }
 
 .team {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 .head--small {
   width: calc(var(s--cl) * 2);
@@ -241,8 +241,8 @@ ul li.services__item:nth-of-type(-n+3) {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-bottom: 85px;
 }
 
@@ -252,7 +252,7 @@ ul li.services__item:nth-of-type(-n+3) {
 }
 
 .team__link {
-    text-decoration: none;
+  text-decoration: none;
 }
 .img__wrp--team {
   background-color: #95e1d3;
@@ -262,152 +262,162 @@ ul li.services__item:nth-of-type(-n+3) {
 }
 
 .team__img {
-    height: 470px;
-    width: 380px;
-    overflow: hidden;
-    -o-object-fit: cover;
-       object-fit: cover;
+  height: 470px;
+  width: 380px;
+  overflow: hidden;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 /* ==== CARD-MODAL ==== */
 
 .card--modal {
-    height: 470px;
-    width: 380px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ee8a8a), color-stop(#f5b78e), to(#efd787));
-    background: -o-linear-gradient(#ee8a8a, #f5b78e, #efd787);
-    background: linear-gradient(#ee8a8a, #f5b78e, #efd787);
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    -webkit-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
+  height: 470px;
+  width: 380px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ee8a8a),
+    color-stop(#f5b78e),
+    to(#efd787)
+  );
+  background: -o-linear-gradient(#ee8a8a, #f5b78e, #efd787);
+  background: linear-gradient(#ee8a8a, #f5b78e, #efd787);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .social-icons {
-    position: absolute;
-    width: 230px;
-    height: 55px;
-    top: 207px;
-    left: 80px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    opacity: 0;
+  position: absolute;
+  width: 230px;
+  height: 55px;
+  top: 207px;
+  left: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  opacity: 0;
 }
 
 .icon__link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .icon {
-width: 55px;
-height: 55px;
-background-color: #f38181;
-overflow: hidden;
-fill: #fce38a;
-cursor: pointer;
+  width: 55px;
+  height: 55px;
+  background-color: #f38181;
+  overflow: hidden;
+  fill: #fce38a;
+  cursor: pointer;
 }
 
 .card:hover .card--modal {
-    opacity: 0.9;
-    -webkit-transform: translate(-10px, -10px);
-        -ms-transform: translate(-10px, -10px);
-            transform: translate(-10px, -10px);
+  opacity: 0.9;
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
 }
 
 .card:hover .social-icons {
-    opacity: 1;
+  opacity: 1;
 }
 
 .icon:hover {
-    fill: #f38181;
-    background-color: #fff;
+  fill: #f38181;
+  background-color: #fff;
 }
 
 .team-name {
-    font-family: "Montserrat", sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-    color: #333333;
-    text-align: center;
-    line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #333333;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .team-position {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    font-size: 15px;
-    color: #a8a8a8;
-    text-align: center;
-    line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  color: #a8a8a8;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .footer {
-    max-width: 1200px;
-    height: 60px;
-    border-top: 1px solid #a8a8a8;
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 0;
+  max-width: 1200px;
+  height: 60px;
+  border-top: 1px solid #a8a8a8;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 0;
 }
 
 .footer__text {
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    color: #a8a8a8;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #a8a8a8;
 }
 
 .company {
-    color: #f38181;
+  color: #f38181;
 }
 
 input {
-    width: 230px;
-    height: 40px;
-    display: inline-block;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    border: 1px solid #a8a8a8;
+  width: 230px;
+  height: 40px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #a8a8a8;
 }
 
 input[placeholder] {
-font-family: "Roboto", sans-serif;
-font-size: 15px;
-font-style: italic;
-font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 300;
 }
 
 .btn {
-    border: none;
-    outline: none;
-    width: 150px;
-    height: 40px;
-    background-color: #95e1d3;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    color: #fff;
-    cursor: pointer;
+  border: none;
+  outline: none;
+  width: 150px;
+  height: 40px;
+  background-color: #95e1d3;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-.container-fluid {
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .container-fluid {
     background-image: url(../img/background@2x-min.png);
-}
+  }
 }
