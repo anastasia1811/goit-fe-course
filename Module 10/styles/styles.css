@@ -24,6 +24,7 @@
   margin: auto;
 }
 
+
 .navigation {
   height: 60px;
   display: -webkit-box;
@@ -199,7 +200,7 @@ ul li.services__item:nth-of-type(-n + 3) {
   margin: auto;
 }
 .head--small {
-  width: calc(var(s--cl) * 2);
+  /* width: calc(var(--cl) * 2); */
   text-align: center;
   font-family: "Kaushan Script", sans-serif;
   font-size: 24px;
@@ -246,6 +247,7 @@ ul li.services__item:nth-of-type(-n + 3) {
   padding-bottom: 85px;
 }
 
+/*  */
 .card {
   width: calc(var(--col) * 4 + var(--g) * 3);
   height: 545px;
