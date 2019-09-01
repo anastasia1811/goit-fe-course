@@ -60,4 +60,13 @@ typings/
 # dotenv environment variables file
 .env
 
+# 
 yarn.lock
+
+.babelrc
+.editorconfig
+.gitattributes
+.prettierrc
+.stylelintrc
+gulpfile.js
+
