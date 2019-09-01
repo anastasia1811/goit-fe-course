@@ -1,0 +1,11 @@
+.logo {
+  width: $column + $gutter;
+  padding-bottom: 11px;
+
+  &__link {
+    text-decoration: none;
+    @extend %montserrat-bold;
+    font-size: 30px;
+    color: #fff;
+  }
+}

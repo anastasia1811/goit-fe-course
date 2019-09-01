@@ -1,0 +1,43 @@
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: auto;
+
+  &__item {
+    list-style: none;
+    width: ($column + $gutter) * 4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__description {
+    width: ($column + $gutter) * 3;
+}
+
+&__head {
+    padding-bottom: 20px;
+    @extend %montserrat-regular;
+    font-size: 14px;
+    color: $dark-grey;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__text {
+    @extend %roboto-regular;
+    font-size: 15px;
+    color: $light-grey;
+  }
+}
+
+.img__wrp--services {
+  width: $column;
+
+  &li.services__item:nth-of-type(-n + 3) {
+    padding-bottom: 50px; 
+}
+}

@@ -1,0 +1,9 @@
+.head__description {
+    width: ($column + $gutter) * 10;
+    text-align: center;
+    margin: auto;
+    color: $light-grey;
+    @extend %roboto-regular;
+    font-size: 15px;
+    padding-bottom: 95px;
+  }

@@ -1,0 +1,19 @@
+.main__head--small {
+    width: ($column + $gutter) * 8;
+    text-align: center;
+    margin: auto;
+    @extend %kaushan;
+    font-size: 72px;
+    color: #fff;
+  }
+  
+  .main__head--big {
+    width: ($column + $gutter) * 9;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    @extend %montserrat-bold;
+    font-size: 150px;
+    color: #fff;
+    padding-bottom: 100px;
+  }

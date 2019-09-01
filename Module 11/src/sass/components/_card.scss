@@ -1,0 +1,91 @@
+.card {
+  width: $column * 4 + $gutter * 3;
+  height: 545px;
+
+  &-img__wrp {
+    background-color: $aqua;
+    height: 470px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  .card-img {
+    height: 470px;
+    width: 380px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .team-link {
+    text-decoration: none;
+  }
+
+  .team-name {
+    @extend %montserrat-regular;
+    font-size: 14px;
+    color: $dark-grey;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .team-position {
+    @extend %roboto-lightitalic;
+    font-size: 15px;
+    color: $light-grey;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  &:hover .card-modal {
+    opacity: 0.9;
+    transform: translate(-10px, -10px);
+  }
+
+  &:hover .social-icon {
+    opacity: 1;
+    transform: translate(-10px, -10px);
+  }
+}
+//
+
+.card-modal {
+  height: 470px;
+  width: 380px;
+  background: linear-gradient(#ee8a8a, #f5b78e, #efd787);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.social-icon {
+  position: absolute;
+  width: 230px;
+  height: 55px;
+  top: 207px;
+  left: 80px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+
+  &__link {
+    text-decoration: none;
+
+    &--svg {
+      width: 55px;
+      height: 55px;
+      background-color: $red;
+      overflow: hidden;
+      fill: $yellow;
+      cursor: pointer;
+
+      &:hover {
+        fill: $red;
+        background-color: #fff;
+      }
+    }
+  }
+}

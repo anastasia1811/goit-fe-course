@@ -1,0 +1,49 @@
+.footer {
+  max-width: $max-width;
+  height: 60px;
+  border-top: 1px solid $light-grey;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0;
+
+  &__text {
+    @extend %montserrat-regular;
+    font-size: 14px;
+    color: $light-grey;
+  }
+
+  &__text--company {
+    color: $red;
+  }
+}
+
+.form {
+  &__input {
+    width: 230px;
+    height: 40px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid $light-grey;
+  }
+
+  &__input[placeholder] {
+    @extend %roboto-lightitalic;
+    font-size: 15px;
+  }
+
+  &__btn {
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    width: 150px;
+    height: 40px;
+    background-color: $aqua;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    @extend %montserrat-bold;
+  }
+}

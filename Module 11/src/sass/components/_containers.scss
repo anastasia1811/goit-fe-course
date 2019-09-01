@@ -1,0 +1,35 @@
+.container-fluid {
+  min-height: 1000px;
+  background-image: url(../../images/background-min.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background-color: teal;
+}
+
+.container {
+  max-width: $max-width;
+  margin: auto;
+  padding: 0;
+}
+
+.navigation {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 30px;
+  padding-bottom: 175px;
+}
+
+.team {
+width: $max-width;
+margin: auto;
+}
+
+.cards__wrp {
+  width: $max-width;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 85px;
+}
