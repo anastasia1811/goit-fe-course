@@ -475,7 +475,7 @@ template {
 
 .container-fluid {
   min-height: 1000px;
-  background-image: url(../../images/background-min.png);
+  background-image: url(../images/background-min.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -811,6 +811,6 @@ template {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .container-fluid {
-    background-image: url(../../images/background@2x-min.png);
+    background-image: url(../images/background@2x-min.png);
   }
 }
