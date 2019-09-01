@@ -62,11 +62,6 @@ typings/
 
 # 
 yarn.lock
+package-lock.json
 
-.babelrc
-.editorconfig
-.gitattributes
-.prettierrc
-.stylelintrc
-gulpfile.js
 
