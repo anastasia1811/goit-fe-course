@@ -4,7 +4,12 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  // background-color: teal;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .container-fluid {
+    background-image: url(../../images/background@2x-min.png);
+  }
 }
 
 .container {
