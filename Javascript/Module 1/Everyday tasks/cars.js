@@ -34,6 +34,5 @@ const wordBeginfromLetter =
   `watermellon`.slice(1, 3).toUpperCase() +
   `watermellon`.slice(4).toLowerCase();
 
-console.log(`wordLength: `, wordLength);
-console.log(`wordBeginFromLetter: `, wordBeginfromLetter);
-console.log();
+const saled = products.indexOf(`watermellon`) + `watermellon`.length;
+console.log(saled);
