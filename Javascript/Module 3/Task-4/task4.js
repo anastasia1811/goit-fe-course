@@ -1,35 +1,34 @@
-`use strict`;
+/* Напиши функцию countTotalSalary(employees) принимающую объект
+зарплат. Функция считает общую сумму запрплаты работников и
+возращает ее. Каждое поле объекта, передаваемого в функцию,
+имеет вид "имя":"зарплата".
 
-// Напиши функцию formatString(string) принимающую строку в параметр string.
+Вызовы функции для проверки работоспособности твоей реализации. */
 
-//     Если длина строки не превышает 40 символов, функция
-//     возвращает ее в исходном виде.
-//     Если длина больше 40 символов, то функция обрезает строку
-//     до 40-ка символов и добавляет в конец строки троеточие '...',
-//     после чего возвращает укороченную версию.
+// eslint-disable-next-line func-names
+const countTotalSalary = function (employees) {
+  // eslint-disable-next-line prefer-const
+  let total = 0;
+  const a = this.Object.values(employees);
+  // const b = a.split(' ');
+  console.log(typeof a);
+  return a;
+};
 
-// Вызовы функции для проверки работоспособности твоей реализации.
-
-function formatString(string) {
-  const shortenString = string.slice(0, 40);
-  if (string.length < 40) {
-    return string;
-  }
-  return `${shortenString}...`;
-}
-
-console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
-// вернется оригинальная строка
-
-console.log(formatString('Vestibulum facilisis, purus nec pulvinar iaculis.'));
-// вернется форматированная строка
-
-console.log(formatString('Curabitur ligula sapien.'));
-// вернется оригинальная строка
+console.log(countTotalSalary({})); // 0
 
 console.log(
-  formatString(
-    'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
-  ),
-);
-// вернется форматированная строка
+  countTotalSalary({
+    mango: 100,
+    poly: 150,
+    alfred: 80,
+  }),
+); // 330
+
+console.log(
+  countTotalSalary({
+    kiwi: 200,
+    lux: 50,
+    chelsy: 150,
+  }),
+); // 400

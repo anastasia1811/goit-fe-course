@@ -10,3 +10,40 @@
 //     не пустой, необходимо посчитать сумму всех элементов массива и
 //     записать ее в переменную total. Используй цикл for или for...of.
 //     После чего в консоль выведи строку 'Общая сумма чисел равна [сумма]'.
+
+// Написать цикл do while где пльзователь будет вводить число, которое будет с
+// cохраняться в массив до нажатия отмены
+// написать ветвление если массив пустой вывод алерт, если с цифрами - посчитать их сумму
+// написать функцию для подсчета суммы чисел в массиве
+//
+//
+
+let input;
+let total = 0;
+const number = [];
+
+//
+
+do {
+  input = prompt('Enter a number');
+  if (input === null) {
+    continue;
+  } else if (Number.isFinite(Number(input))) {
+    number.push(Number(input));
+  } else {
+    alert('Entered invalid number');
+  }
+} while (input !== null);
+
+//
+
+function addNumbers(array) {
+  for (i = 0; i < array.length; i += 1) {
+    total += array[i];
+  }
+  return total;
+}
+
+console.log(`Общая сумма чисел равна: ${addNumbers(number)}`);
+
+// console.log(addNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9]));
